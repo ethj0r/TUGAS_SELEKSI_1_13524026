@@ -1,0 +1,6854 @@
+[
+  {
+    "company_slug": "doordash",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "doordash",
+    "industry_id": 2
+  },
+  {
+    "company_slug": "airbnb",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "airbnb",
+    "industry_id": 3
+  },
+  {
+    "company_slug": "coinbase",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "coinbase",
+    "industry_id": 5
+  },
+  {
+    "company_slug": "groww",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "groww",
+    "industry_id": 6
+  },
+  {
+    "company_slug": "instacart",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "instacart",
+    "industry_id": 2
+  },
+  {
+    "company_slug": "meesho",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "meesho",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "oklo",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "oklo",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "rigetti-computing",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "rigetti-computing",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "gitlab",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "gitlab",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "billiontoone",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "billiontoone",
+    "industry_id": 14
+  },
+  {
+    "company_slug": "dropbox",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "dropbox",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "equipmentshare",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "equipmentshare",
+    "industry_id": 17
+  },
+  {
+    "company_slug": "matterport",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "matterport",
+    "industry_id": 18
+  },
+  {
+    "company_slug": "amplitude",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "amplitude",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "pagerduty",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pagerduty",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "weave",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "weave",
+    "industry_id": 20
+  },
+  {
+    "company_slug": "ginkgo-bioworks",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "ginkgo-bioworks",
+    "industry_id": 21
+  },
+  {
+    "company_slug": "pardes-bio",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "pardes-bio",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "momentus",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "momentus",
+    "industry_id": 23
+  },
+  {
+    "company_slug": "embark-trucks",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "embark-trucks",
+    "industry_id": 24
+  },
+  {
+    "company_slug": "lucira-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "lucira-health",
+    "industry_id": 14
+  },
+  {
+    "company_slug": "segment",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "segment",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "algolia",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "algolia",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "truebill",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "truebill",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "twitch",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "twitch",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "plangrid",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "plangrid",
+    "industry_id": 17
+  },
+  {
+    "company_slug": "bellabeat",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "bellabeat",
+    "industry_id": 27
+  },
+  {
+    "company_slug": "cruise",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "cruise",
+    "industry_id": 24
+  },
+  {
+    "company_slug": "benchling",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "casetext",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "casetext",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "bird",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "bird",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "brex",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "brex",
+    "industry_id": 5
+  },
+  {
+    "company_slug": "the-athletic",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "the-athletic",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "codecademy",
+    "industry_id": 29
+  },
+  {
+    "company_slug": "checkr",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "checkr",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "lever",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lever",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "clipboard",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "heap",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "heap",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "sendwave",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "sendwave",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "deel",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "deel",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "clever",
+    "industry_id": 29
+  },
+  {
+    "company_slug": "caper",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "caper",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "reddit",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "reddit",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "fivestars",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "fivestars",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "machine-zone",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "machine-zone",
+    "industry_id": 34
+  },
+  {
+    "company_slug": "faire",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "faire",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "fivetran",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "fivetran",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "optimizely",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "optimizely",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "flexport",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "flexport",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "wepay",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "wepay",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "weebly",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "weebly",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "flock-safety",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "flock-safety",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "sqreen",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sqreen",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "nurx",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "nurx",
+    "industry_id": 39
+  },
+  {
+    "company_slug": "go1",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "go1",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "coreos",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "coreos",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "bear-flag-robotics",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "bear-flag-robotics",
+    "industry_id": 40
+  },
+  {
+    "company_slug": "goat-group",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "goat-group",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "heroku",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "heroku",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "grubmarket",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "grubmarket",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "hellosign",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hellosign",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "zenefits",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zenefits",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "gusto",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "gusto",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "honeylove",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "honeylove",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "modern-fertility",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "modern-fertility",
+    "industry_id": 39
+  },
+  {
+    "company_slug": "cognito",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cognito",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "openinvest",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "mixpanel",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mixpanel",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "paystack",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "paystack",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "moxion-power-co",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "moxion-power-co",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "drchrono",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "drchrono",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "omgpop",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "omgpop",
+    "industry_id": 34
+  },
+  {
+    "company_slug": "newfront-insurance",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "newfront-insurance",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "north",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "north",
+    "industry_id": 18
+  },
+  {
+    "company_slug": "nowports",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "nowports",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "odeko",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "gitprime",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "gitprime",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "proxy",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "proxy",
+    "industry_id": 27
+  },
+  {
+    "company_slug": "futureadvisor",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "futureadvisor",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "podium",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "podium",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "rappi",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "rappi",
+    "industry_id": 2
+  },
+  {
+    "company_slug": "razorpay",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "razorpay",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "rippling",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rippling",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "scale-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "scale-ai",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "scentbird",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "scentbird",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "scribd",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "scribd",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "shipbob",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "shipbob",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "smartasset",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "smartasset",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "stripe",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "wave",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "wave",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "webflow",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "webflow",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "whatnot",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "zapier",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zapier",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "zepto",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "zepto",
+    "industry_id": 2
+  },
+  {
+    "company_slug": "focal-systems",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "focal-systems",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "mio",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mio",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "daily",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "daily",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "petcube",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "petcube",
+    "industry_id": 27
+  },
+  {
+    "company_slug": "outschool",
+    "industry_id": 29
+  },
+  {
+    "company_slug": "mason",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "magicbus",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "magicbus",
+    "industry_id": 44
+  },
+  {
+    "company_slug": "tovala",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "tovala",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "isono-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "isono-health",
+    "industry_id": 46
+  },
+  {
+    "company_slug": "getaccept",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "getaccept",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "chatfuel",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "chatfuel",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "yardbook",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "yardbook",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "gocardless",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "gocardless",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "stealth-worker",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "stealth-worker",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "deepgram",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "deepgram",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "soundboks",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "soundboks",
+    "industry_id": 27
+  },
+  {
+    "company_slug": "lattice",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lattice",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "mux",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mux",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "human-interest",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "human-interest",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "flirtey",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "flirtey",
+    "industry_id": 48
+  },
+  {
+    "company_slug": "eight-sleep",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "eight-sleep",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "instawork",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "instawork",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "cofactor-genomics",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "cofactor-genomics",
+    "industry_id": 14
+  },
+  {
+    "company_slug": "bitmovin",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "bitmovin",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "tetrascience",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "tetrascience",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "the-ticket-fairy",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "the-ticket-fairy",
+    "industry_id": 3
+  },
+  {
+    "company_slug": "font-awesome",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "font-awesome",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "80-000-hours",
+    "industry_id": 49
+  },
+  {
+    "company_slug": "xendit",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "xendit",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "shred-video",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "shred-video",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "shape-shapescale",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "shape-shapescale",
+    "industry_id": 27
+  },
+  {
+    "company_slug": "redcarpetup",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "redcarpetup",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "plate-iq",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "plate-iq",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "picktrace",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "picktrace",
+    "industry_id": 40
+  },
+  {
+    "company_slug": "fountain",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "fountain",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "microhealth",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "microhealth",
+    "industry_id": 39
+  },
+  {
+    "company_slug": "zeplin",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zeplin",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "markhor",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "markhor",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "circle-medical",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "circle-medical",
+    "industry_id": 39
+  },
+  {
+    "company_slug": "givecampus",
+    "industry_id": 29
+  },
+  {
+    "company_slug": "drip-capital",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "chaldal",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "chaldal",
+    "industry_id": 2
+  },
+  {
+    "company_slug": "clerky",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "clerky",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "bodyport",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "bodyport",
+    "industry_id": 39
+  },
+  {
+    "company_slug": "verge-genomics",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "verge-genomics",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "thrive-agritech",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "thrive-agritech",
+    "industry_id": 40
+  },
+  {
+    "company_slug": "tesorio",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "tesorio",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "agilemd",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "agilemd",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "reach",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "reach",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "sunfarmer",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "sunfarmer",
+    "industry_id": 50
+  },
+  {
+    "company_slug": "confident-lims",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "confident-lims",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "branch8",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "branch8",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "heroic-labs",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "heroic-labs",
+    "industry_id": 34
+  },
+  {
+    "company_slug": "snapmagic",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "snapmagic",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "partnerstack",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "partnerstack",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "assembly",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "assembly",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "gemnote",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "gemnote",
+    "industry_id": 20
+  },
+  {
+    "company_slug": "new-story",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "ironclad",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ironclad",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "leaders-in-tech",
+    "industry_id": 49
+  },
+  {
+    "company_slug": "teabot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "teabot",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "teleport",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "teleport",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "lugg",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "lugg",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "shasqi",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "shasqi",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "mashgin",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mashgin",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "nimblerx",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "nimblerx",
+    "industry_id": 39
+  },
+  {
+    "company_slug": "quartzy",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "quartzy",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "replika",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "replika",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "tara-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "tara-ai",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "flip",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "flip",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "x-zell",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "x-zell",
+    "industry_id": 14
+  },
+  {
+    "company_slug": "zenflow",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "zenflow",
+    "industry_id": 46
+  },
+  {
+    "company_slug": "tab",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "tab",
+    "industry_id": 3
+  },
+  {
+    "company_slug": "streak",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "streak",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "meadow",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "meadow",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "level-frames",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "level-frames",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "industrial-microbes",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "industrial-microbes",
+    "industry_id": 21
+  },
+  {
+    "company_slug": "giveffect",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "giveffect",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "ebrandvalue",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ebrandvalue",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "quantierra",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "quantierra",
+    "industry_id": 52
+  },
+  {
+    "company_slug": "cleanly",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "cleanly",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "resolve",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "resolve",
+    "industry_id": 17
+  },
+  {
+    "company_slug": "makrwatch",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "makrwatch",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "teamnote",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "teamnote",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "tempo",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "tempo",
+    "industry_id": 39
+  },
+  {
+    "company_slug": "sirum",
+    "industry_id": 49
+  },
+  {
+    "company_slug": "sails-co",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sails-co",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "readme",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "readme",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "buildscience",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "buildscience",
+    "industry_id": 52
+  },
+  {
+    "company_slug": "platzi",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "platzi",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "labdoor",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "labdoor",
+    "industry_id": 2
+  },
+  {
+    "company_slug": "givemetap",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "givemetap",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "bankjoy",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "bankjoy",
+    "industry_id": 5
+  },
+  {
+    "company_slug": "zeitview",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "zeitview",
+    "industry_id": 48
+  },
+  {
+    "company_slug": "the-human-utility",
+    "industry_id": 49
+  },
+  {
+    "company_slug": "democracy-earth",
+    "industry_id": 49
+  },
+  {
+    "company_slug": "onesignal",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "onesignal",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "numerion-labs",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "numerion-labs",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "bright",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "bright",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "magic",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mezmo",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mezmo",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "akido-labs",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "akido-labs",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "qventus",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "qventus",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "bayes-impact",
+    "industry_id": 49
+  },
+  {
+    "company_slug": "helion-energy",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "helion-energy",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "hackerrank",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hackerrank",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "front",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "front",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "apollo",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "apollo",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "roomstorm",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "roomstorm",
+    "industry_id": 3
+  },
+  {
+    "company_slug": "hive",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hive",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "spotangels",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "spotangels",
+    "industry_id": 44
+  },
+  {
+    "company_slug": "usergems",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "usergems",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "sfox",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "sfox",
+    "industry_id": 5
+  },
+  {
+    "company_slug": "picnicai",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "permutive",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "permutive",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "alchemy",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "alchemy",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "mtailor",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "mtailor",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "metricwire",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "metricwire",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "protocol-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "protocol-labs",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "greentoe",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "greentoe",
+    "industry_id": 27
+  },
+  {
+    "company_slug": "hyperpad",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "hyperpad",
+    "industry_id": 34
+  },
+  {
+    "company_slug": "flaviar",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "flaviar",
+    "industry_id": 2
+  },
+  {
+    "company_slug": "cleartax",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "cleartax",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "backpack",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "backpack",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "immunity-project",
+    "industry_id": 49
+  },
+  {
+    "company_slug": "dyspatch",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "dyspatch",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "opencurriculum",
+    "industry_id": 49
+  },
+  {
+    "company_slug": "mixerbox",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "gbatteries",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "gbatteries",
+    "industry_id": 50
+  },
+  {
+    "company_slug": "zinc",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zinc",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "zidisha",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "zidisha",
+    "industry_id": 53
+  },
+  {
+    "company_slug": "truevault",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "guesty",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "guesty",
+    "industry_id": 52
+  },
+  {
+    "company_slug": "snapdocs",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "snapdocs",
+    "industry_id": 52
+  },
+  {
+    "company_slug": "medmonk",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "medmonk",
+    "industry_id": 54
+  },
+  {
+    "company_slug": "shoobs",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "shoobs",
+    "industry_id": 3
+  },
+  {
+    "company_slug": "pushbullet",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "pushbullet",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "povio",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "povio",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "piinpoint",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "piinpoint",
+    "industry_id": 20
+  },
+  {
+    "company_slug": "one-degree",
+    "industry_id": 49
+  },
+  {
+    "company_slug": "mbx",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "mbx",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "emailio",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "emailio",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "codenow",
+    "industry_id": 49
+  },
+  {
+    "company_slug": "codecombat",
+    "industry_id": 29
+  },
+  {
+    "company_slug": "noora-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "cambly",
+    "industry_id": 29
+  },
+  {
+    "company_slug": "aptdeco",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "aptdeco",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "caremessage",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "ambition",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ambition",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "airhelp",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "airhelp",
+    "industry_id": 3
+  },
+  {
+    "company_slug": "42",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "42",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "true-link",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "reebee",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "reebee",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "lob",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lob",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "panorama-education",
+    "industry_id": 29
+  },
+  {
+    "company_slug": "cratejoy",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cratejoy",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "estimote-inc",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "estimote-inc",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "easypost",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "easypost",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "asseta",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "per-vices",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "7cups",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "7cups",
+    "industry_id": 54
+  },
+  {
+    "company_slug": "watsi",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "goldbelly",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "goldbelly",
+    "industry_id": 2
+  },
+  {
+    "company_slug": "wevorce",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "wevorce",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "wefunder",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "wefunder",
+    "industry_id": 6
+  },
+  {
+    "company_slug": "simplyinsured",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "simplyinsured",
+    "industry_id": 54
+  },
+  {
+    "company_slug": "circuithub",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "circuithub",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "experiment",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "experiment",
+    "industry_id": 54
+  },
+  {
+    "company_slug": "radar",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "radar",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "lollipuff",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "lollipuff",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "strikingly",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "strikingly",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "influxdata",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "influxdata",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "etleap",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "etleap",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "cheetah",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cheetah",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "lawdingo",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "lawdingo",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "padlet",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "padlet",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "buildzoom",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "buildzoom",
+    "industry_id": 45
+  },
+  {
+    "company_slug": "circuitlab",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "circuitlab",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "styleup",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "styleup",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "9gag",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "9gag",
+    "industry_id": 55
+  },
+  {
+    "company_slug": "svbtle",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "svbtle",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "plivo",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "double-robotics",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "double-robotics",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "vastrm",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "vastrm",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "flightfox",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "flightfox",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "backerkit",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "backerkit",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "submittable",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "newsblur",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "newsblur",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "octavewealth",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "octavewealth",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "upwave",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "upwave",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "eligible",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "eligible",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "fundersclub",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "fundersclub",
+    "industry_id": 6
+  },
+  {
+    "company_slug": "zentail",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zentail",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "mattermost",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mattermost",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "healthsherpa",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "healthsherpa",
+    "industry_id": 54
+  },
+  {
+    "company_slug": "human-dx",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "human-dx",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "mth-sense",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mth-sense",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "rainforest",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rainforest",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "screenleap-inc",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "screenleap-inc",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "buxfer",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "buxfer",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "virtualmin",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "virtualmin",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "conifer",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "simantic",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "simantic",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "experiential-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "experiential-labs",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "edviro",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "edviro",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "coasty",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "osseus",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "osseus",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "salem-robotics-inc",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "salem-robotics-inc",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "robocurve",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "robocurve",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "onecli",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "onecli",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "amulet",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "amulet",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "petrarch",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "justinian",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "florin",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "earendil-robotics",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "earendil-robotics",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "hop-aero",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "hop-aero",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "openrelay",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "openrelay",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "hyperprobe",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hyperprobe",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "skymerse",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "skymerse",
+    "industry_id": 23
+  },
+  {
+    "company_slug": "83-sciences",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "mireye",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mireye",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "levocred-ai",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "praxis-ai-2",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "care-gp",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "agnost-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "agnost-ai",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "agentcard",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "provenmetal",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "provenmetal",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "inkbox",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "inkbox",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "operon",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "cosmic-robotics",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "markov",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "markov",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "denta",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "denta",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "isengard-industries-inc",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "isengard-industries-inc",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "vestris",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "vestris",
+    "industry_id": 52
+  },
+  {
+    "company_slug": "lato",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "risklytics",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "risklytics",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "fabraix",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "fabraix",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "whitespace",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "whitespace",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "blue-frog-gaming",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "blue-frog-gaming",
+    "industry_id": 34
+  },
+  {
+    "company_slug": "greypoint-industries",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "greypoint-industries",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "ooak-data",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "noril1",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "noril1",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "6thsense",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "6thsense",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "bloomy",
+    "industry_id": 29
+  },
+  {
+    "company_slug": "machine0",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "machine0",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "talentpluto",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "talentpluto",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "flowmanual",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "flowmanual",
+    "industry_id": 17
+  },
+  {
+    "company_slug": "molagri",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "molagri",
+    "industry_id": 40
+  },
+  {
+    "company_slug": "cerenovus",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "definite",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "definite",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "alkera-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "alkera-ai",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "screenpipe",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "screenpipe",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "touchmark",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "touchmark",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "codag",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "codag",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "contextdev",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "contextdev",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "glen",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "glen",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "truffle",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "alloovium",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "alloovium",
+    "industry_id": 17
+  },
+  {
+    "company_slug": "dialogus",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "dialogus",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "realpact",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "realpact",
+    "industry_id": 52
+  },
+  {
+    "company_slug": "guild",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "guild",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "floracene",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "rise-reforming",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "rise-reforming",
+    "industry_id": 50
+  },
+  {
+    "company_slug": "verdant",
+    "industry_id": 57
+  },
+  {
+    "company_slug": "insurf",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "lemonlime",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "speko",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "speko",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "understudy-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "understudy-labs",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "rote",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rote",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "prized",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "prized",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "rex-inc",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rex-inc",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "zomma",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "nebula-security",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "nebula-security",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "trope",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "parasma",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "parasma",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "perceptron-ml",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "opentrade",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "hoplite",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "hoplite",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "cleverdeck",
+    "industry_id": 29
+  },
+  {
+    "company_slug": "pango",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pango",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "torus",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "rightnow",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rightnow",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "akkari",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "heyclicky",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "rindler",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rindler",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "huscarl",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "huscarl",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "thomas",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cohesion",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cohesion",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "maquoketa-research",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "maquoketa-research",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "intelligence-factory",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "intelligence-factory",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "clawvisor",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "clawvisor",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "framewise-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "arctic-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "arctic-health",
+    "industry_id": 54
+  },
+  {
+    "company_slug": "playablai",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "playablai",
+    "industry_id": 34
+  },
+  {
+    "company_slug": "enjamb-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hyper-4",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hyper-4",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "insforge",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "insforge",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "reasonblocks",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "modern",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "modern",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "panacea",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "panacea",
+    "industry_id": 54
+  },
+  {
+    "company_slug": "centralcoms",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "centralcoms",
+    "industry_id": 52
+  },
+  {
+    "company_slug": "kugelaudio",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "kugelaudio",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "klaimee",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "klaimee",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "flowscope",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "gigacatalyst",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "gigacatalyst",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "arlo-industries",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "arlo-industries",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "astraea",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lattice-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "atlas-discovery",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "atlas-discovery",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "manicule",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "manicule",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "avea-robotics",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "avea-robotics",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "mochatrade",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "mochatrade",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "asendia-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "revnu",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "revnu",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "uno-wallet",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "uno-wallet",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "arden",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "arden",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "agentphone",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "agentphone",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "gravy",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "gravy",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "kinect",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "runtime",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "runtime",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "youart",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "youart",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "expanse",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "expanse",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "characterquilt",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "characterquilt",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "pentagon",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pentagon",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "arzana",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "arzana",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "auxos",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "projectx",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "projectx",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "tolmo",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "tolmo",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "openwork",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "openwork",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "apollo-atomics-inc",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "apollo-atomics-inc",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "general-aviation",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "general-aviation",
+    "industry_id": 23
+  },
+  {
+    "company_slug": "openprose",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "openprose",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "asterlab",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "asterlab",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "amboras",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hessian",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "raspire",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "raspire",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "plena-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "plena-health",
+    "industry_id": 54
+  },
+  {
+    "company_slug": "testerarmy",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "testerarmy",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "eden-robotics",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "eden-robotics",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "foaster",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "aquashield",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "ornadyne",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "ornadyne",
+    "industry_id": 48
+  },
+  {
+    "company_slug": "anoria",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "anoria",
+    "industry_id": 27
+  },
+  {
+    "company_slug": "abinitio-bio",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "abinitio-bio",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "memory-store",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "memory-store",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "saudara-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pops",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "pops",
+    "industry_id": 34
+  },
+  {
+    "company_slug": "silmaril",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "biostack-platforms",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "shepherd-3",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ardent",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ardent",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "kuli",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "kuli",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "wato",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "wato",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "tasklet-2",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "tasklet-2",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "chronicle-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "walter",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "walter",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "aseon-labs",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "aseon-labs",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "soria",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "soria",
+    "industry_id": 6
+  },
+  {
+    "company_slug": "armature",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "armature",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "plan0-ai",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "zibra-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zibra-labs",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "ara",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ara",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "valctrl",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "valctrl",
+    "industry_id": 5
+  },
+  {
+    "company_slug": "general-instinct",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "general-instinct",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "tdaycom",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "tdaycom",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "datost",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "datost",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "minicor",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "minicor",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "degla-inc",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "degla-inc",
+    "industry_id": 48
+  },
+  {
+    "company_slug": "archer",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "archer",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "river-markets",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "smol-machines",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "smol-machines",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "allowance",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "allowance",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "runharbor",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "alchemize",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "alchemize",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "complir",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "complir",
+    "industry_id": 8
+  },
+  {
+    "company_slug": "aice",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "aice",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "infera",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "infera",
+    "industry_id": 21
+  },
+  {
+    "company_slug": "mount",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "mount",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "useparrot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "result",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "textsidekick",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "textsidekick",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "prototypingio",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "prototypingio",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "lumius",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "lumius",
+    "industry_id": 46
+  },
+  {
+    "company_slug": "adialante",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "adialante",
+    "industry_id": 14
+  },
+  {
+    "company_slug": "savant",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "savant",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "keyframe-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "voquill",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "oddpool",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "oddpool",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "ontora",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ontora",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "napkin-math",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "gojiberry-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "gojiberry-ai",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "lab0",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "bentolabs-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lamina-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lamina-labs",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "kimpton-ai",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "kimpton-ai",
+    "industry_id": 6
+  },
+  {
+    "company_slug": "stablebrowse",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "stablebrowse",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "taiga",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "taiga",
+    "industry_id": 54
+  },
+  {
+    "company_slug": "pairio",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "callab-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "callab-ai",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "synphony",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "synphony",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "drippay",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "drippay",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "arga-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "andco",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "andco",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "rentahuman",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "rentahuman",
+    "industry_id": 58
+  },
+  {
+    "company_slug": "instaagent",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "instaagent",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "salesgraph",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "salesgraph",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "sherpa",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "userlens",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "userlens",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "transload",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "transload",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "standout",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "standout",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "shotwellai",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "shotwellai",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "madrone",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "madrone",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "pavoot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pavoot",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "qomplement",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "deep-interactions",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "kelai",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "kelai",
+    "industry_id": 6
+  },
+  {
+    "company_slug": "hevn-inc",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "wealor",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "wealor",
+    "industry_id": 6
+  },
+  {
+    "company_slug": "elyra",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "interfaze",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "interfaze",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "zolvo",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "zolvo",
+    "industry_id": 53
+  },
+  {
+    "company_slug": "juno-chat",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "juno-chat",
+    "industry_id": 39
+  },
+  {
+    "company_slug": "kinro",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "kinro",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "govguard",
+    "industry_id": 57
+  },
+  {
+    "company_slug": "superlog",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "superlog",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "godhands",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "limrun",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "limrun",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "light-anchor",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "hub",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hub",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "tenet-industries",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "tenet-industries",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "atrisa",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "atrisa",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "trellistech",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "trellistech",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "the-company-company",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "dayjob",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "dayjob",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "inloop-robotics",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "inloop-robotics",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "zenbu-2",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zenbu-2",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "andustry",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "andustry",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "nine-fives",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "nine-fives",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "incandor",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "chert",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "saffron",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "saffron",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "discovered-materials",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "lightsprint",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lightsprint",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "twolabs",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "twolabs",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "scope",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hexa",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hexa",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "palette-2",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rudus",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "rudus",
+    "industry_id": 17
+  },
+  {
+    "company_slug": "replicas",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "replicas",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "totalis",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "totalis",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "withai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "osmaura",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "instance",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "memoir",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "memoir",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "perfectbit-inc",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "stage",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "stage",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "standard-signal",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "standard-signal",
+    "industry_id": 6
+  },
+  {
+    "company_slug": "primitive",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "primitive",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "korso",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "klarify",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "klarify",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "surtr-defense-systems",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "surtr-defense-systems",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "hedge",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "hedge",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "trycardinal-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "wideframe",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "martini",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "martini",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "litmus-hiring",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "litmus-hiring",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "condor-energy",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "condor-energy",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "remix-3",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "shofo",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "shofo",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "wayco",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "wayco",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "unifold",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "unifold",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "carrot-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "dispatch",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "dispatch",
+    "industry_id": 23
+  },
+  {
+    "company_slug": "trybloom",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "aurorin-cad",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "aurorin-cad",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "fixture",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "fixture",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "origami-robotics",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "ossus",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ossus",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "zymbly",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ritivel",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "ritivel",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "polymorph",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pollinate",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pollinate",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "spotpay",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "spotpay",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "poth-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "voygr",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mochacare",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mochacare",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "cova",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "vela",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "supafax",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "supafax",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "talking-computers",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "control-seat",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "copperlane",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "copperlane",
+    "industry_id": 53
+  },
+  {
+    "company_slug": "tsenta",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "tsenta",
+    "industry_id": 58
+  },
+  {
+    "company_slug": "canary",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "canary",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "grade",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "sila",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sila",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "maven",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "maven",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "moda",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "moda",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "the-token-company",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "the-token-company",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "beesafe-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "beesafe-ai",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "fed10",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "fed10",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "inth",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "inth",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "squid",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "squid",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "crow",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "foreman",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "booko",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "corelayer",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "corelayer",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "general-legal",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "general-legal",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "fort",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "fort",
+    "industry_id": 27
+  },
+  {
+    "company_slug": "getbalance",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "getbalance",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "ekpa",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "ekpa",
+    "industry_id": 6
+  },
+  {
+    "company_slug": "chasi",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "glue",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "glue",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "o11",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "o11",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "doomersion",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "sequence-markets",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "libra-robotics",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "libra-robotics",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "ditto-biosciences",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "ditto-biosciences",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "servo7",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "servo7",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "superset",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "superset",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "netter",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "netter",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "voxel-energy",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "voxel-energy",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "polymath",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "archal",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "archal",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "bubble-lab",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "bubble-lab",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "pocket",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "byteport",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "constellation-space",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "constellation-space",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "sazabi",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sazabi",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "mendral",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "axionorbital-space",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "axionorbital-space",
+    "industry_id": 23
+  },
+  {
+    "company_slug": "oximy",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "oximy",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "caretta",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "caretta",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "samora-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "human-archive",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "human-archive",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "forum",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "sitefire",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sitefire",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "robby",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "robby",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "ressl-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "emdash",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "emdash",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "inventoryquant",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "congruent",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "usereframe",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "usereframe",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "valence",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "valence",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "9-mothers-corporation",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "9-mothers-corporation",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "approxima",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "approxima",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "traverse",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "revion",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "maywood",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "maywood",
+    "industry_id": 5
+  },
+  {
+    "company_slug": "fenrock-ai",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "fenrock-ai",
+    "industry_id": 5
+  },
+  {
+    "company_slug": "end-close",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "end-close",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "chamber",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "chamber",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "assemble",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "patientdeskai",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "patientdeskai",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "visibl-semiconductors",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "visibl-semiconductors",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "synthetic-sciences",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "synthetic-sciences",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "seeing-systems",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "seeing-systems",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "jinba",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cardboard",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "prana-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "prana-health",
+    "industry_id": 39
+  },
+  {
+    "company_slug": "rhizome-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pax-historia",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "pax-historia",
+    "industry_id": 34
+  },
+  {
+    "company_slug": "hex-security",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hex-security",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "laurence",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "laurence",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "terminal-use",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "terminal-use",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "overshoot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cajal-technologies",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "proximitty",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "proximitty",
+    "industry_id": 53
+  },
+  {
+    "company_slug": "instinct-xyz",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "stilta",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "unisson",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "unisson",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "brownie",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "brownie",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "compresr",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "compresr",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "opalite-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "confluence-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mango-medical-inc",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "mango-medical-inc",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "sponge",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "terranox-ai",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "terranox-ai",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "drafted",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "ventura",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "orthogonal",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "orthogonal",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "perfectly",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "perfectly",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "fern-bot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "fern-bot",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "sparkles",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sparkles",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "eigenpal",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "eigenpal",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "salus",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "salus",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "moritz",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "moritz",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "ramain",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "milliray",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "milliray",
+    "industry_id": 48
+  },
+  {
+    "company_slug": "beyond-reach-labs",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "beyond-reach-labs",
+    "industry_id": 23
+  },
+  {
+    "company_slug": "octapulse",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "octapulse",
+    "industry_id": 50
+  },
+  {
+    "company_slug": "ashr",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ashr",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "aemon",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "luel",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "luel",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "scheduling-wizard",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "scheduling-wizard",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "robodock",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "robodock",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "skillsync",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "skillsync",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "mousecat",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zatanna",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zatanna",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "autositu",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "autositu",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "verdex",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "verdex",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "cumulus-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cumulus-labs",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "tepali",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "palus-finance",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "21st",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "21st",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "avoice",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "kyten-technologies",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "kyten-technologies",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "zerosettle",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "zerosettle",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "carson",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cignara",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "openspec",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pirislabs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pirislabs",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "celltype",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "celltype",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "burt",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "burt",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "envariant",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cascade",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cascade",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "beacon-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "strand-ai",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "strand-ai",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "baseframe",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "protent",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "protent",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "cofia",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cofia",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "fuchsia",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "legalos",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "legalos",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "sentrial",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sentrial",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "10x-science",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rev1",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rev1",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "shortkit",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "shortkit",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "asimov",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "asimov",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "lexius",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lexius",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "axis-2",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "sonarly",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sonarly",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "docura-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "lance",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "runanywhere",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "runanywhere",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "lucent",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "prescience-inc",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "ruma-care",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "klaus-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "klaus-ai",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "kita",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "syntropy",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "syntropy",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "one-robot",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "one-robot",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "didit",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "didit",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "panta",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "panta",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "imperfect",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "trustai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "trustai",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "payna",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "origin-bio",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "origin-bio",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "clara-2",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "clara-2",
+    "industry_id": 39
+  },
+  {
+    "company_slug": "hlabs",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "eos-ai",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "valgo",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "valgo",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "arc-prize-foundation",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "corvera",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "corvera",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "fullseam",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "fullseam",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "linzumi",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "linzumi",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "advanced-metal-research",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "advanced-metal-research",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "ploy",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "catchback-cards",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "catchback-cards",
+    "industry_id": 34
+  },
+  {
+    "company_slug": "mantis",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "mantis",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "haladir",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "haladir",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "claimglide",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "claimglide",
+    "industry_id": 54
+  },
+  {
+    "company_slug": "inviscid-ai",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "inviscid-ai",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "coasts",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "coasts",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "zephyr-fusion",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "zephyr-fusion",
+    "industry_id": 10
+  },
+  {
+    "company_slug": "mayflower",
+    "industry_id": 57
+  },
+  {
+    "company_slug": "ndea-com",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "item",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "item",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "crosslayer-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "crosslayer-labs",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "rivet-design",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rivet-design",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "openroll",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "amika",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "amika",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "specific-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "moss",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zarna",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zarna",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "markit",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "markit",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "voltair",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "voltair",
+    "industry_id": 48
+  },
+  {
+    "company_slug": "clicks",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "clicks",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "fastshot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "fastshot",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "vector-legal",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "vector-legal",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "shoptiques",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "shoptiques",
+    "industry_id": 41
+  },
+  {
+    "company_slug": "antigen",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "antigen",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "lunabill",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "lunabill",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "nerviom",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "velvet",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "diligencesquared-inc",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "diligencesquared-inc",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "amera",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "amera",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "forge-robotics",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "forge-robotics",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "bluma",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "bluma",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "lightberry",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "lightberry",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "the-hog",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "the-hog",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "telemetron-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "boom-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "freeport-markets",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "freeport-markets",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "miniswap",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "miniswap",
+    "industry_id": 34
+  },
+  {
+    "company_slug": "rovi-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "madethis",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "madethis",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "generalastro",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "generalastro",
+    "industry_id": 23
+  },
+  {
+    "company_slug": "jarmin",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "exonic",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "exonic",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "uselemma",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "uselemma",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "perseus",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "perseus",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "karumi",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "karumi",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "icarus",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "icarus",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "savahq",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "takecareos",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "denki",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "denki",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "metorial",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "kalpa-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "absurd",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "absurd",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "clad-labs",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "automax-ai",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "automax-ai",
+    "industry_id": 52
+  },
+  {
+    "company_slug": "specific",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "specific",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "primer",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "usenarrative",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "usenarrative",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "crunched",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "crunched",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "lua-global-inc",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "philon",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sourcebot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sourcebot",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "zalos",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zalos",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "tryprism",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "tryprism",
+    "industry_id": 31
+  },
+  {
+    "company_slug": "aside",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "scott-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "everest",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "expected-parrot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "imagine-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "imagine-ai",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "anto-biosciences",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "patent-watch",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "s2-dev",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "s2-dev",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "tornyol",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "tornyol",
+    "industry_id": 27
+  },
+  {
+    "company_slug": "nucleo",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "leadbay",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "leadbay",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "pixley-ai",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "pixley-ai",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "cortex-ai",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "cortex-ai",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "solbrowser",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "solbrowser",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "thesis",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "oxus",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "play-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "casey",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "casey",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "selfin",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "selfin",
+    "industry_id": 25
+  },
+  {
+    "company_slug": "compyle",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "compyle",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "lexi",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lexi",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "codyco",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "complydo",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "complydo",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "bravi",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "finaldose",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "finaldose",
+    "industry_id": 59
+  },
+  {
+    "company_slug": "sunflower",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "captain",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "captain",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "redapto",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "helonic",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "helonic",
+    "industry_id": 17
+  },
+  {
+    "company_slug": "aleph-lab",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "logical",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "logical",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "agentic-fabriq",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "agentic-fabriq",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "travo",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "tensr",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "tensr",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "kestrel-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "kestrel-ai",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "logosguard",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sciloop",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sciloop",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "multifactor",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "multifactor",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "allus-ai",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "allus-ai",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "unsiloed-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sf-tensor",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sf-tensor",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "answerthis",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "terrain",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "terrain",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "lakonia",
+    "industry_id": 57
+  },
+  {
+    "company_slug": "sellraze",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "mod-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "semble-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "flick",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "flick",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "hillclimb",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hillclimb",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "atlasgrid",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "atlasgrid",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "wardstone",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "wardstone",
+    "industry_id": 23
+  },
+  {
+    "company_slug": "nessie",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "hypercubic",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cranston-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "cranston-ai",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "trelium",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "velum-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "veria-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "veria-labs",
+    "industry_id": 38
+  },
+  {
+    "company_slug": "minro",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "minro",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "tell-if-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "tell-if-ai",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "bron",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "bron",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "koyal",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "koyal",
+    "industry_id": 26
+  },
+  {
+    "company_slug": "kaigo-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "kaigo-health",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "norra",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "soren",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lunavo",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lunavo",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "daridev",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "daridev",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "the-context-company",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "the-context-company",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "sorce",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sorce",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "caddy",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "caddy",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "alt-x",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "locus",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "locus",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "deeptrace",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "aspect-inc",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "aspect-inc",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "scoop",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hyperspell",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hyperspell",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "bolna-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "gpt",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "zavo",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "zavo",
+    "industry_id": 32
+  },
+  {
+    "company_slug": "movedot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "movedot",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "parrot",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "brickwise",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "brickwise",
+    "industry_id": 52
+  },
+  {
+    "company_slug": "parse-bot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "structured-ai",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "structured-ai",
+    "industry_id": 17
+  },
+  {
+    "company_slug": "uplane",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "uplane",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "aircaps",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "brickanta",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "brickanta",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "f2",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "f2",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "semiotic",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "semiotic",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "lapis",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "lapis",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "efference",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "efference",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "nox-metals",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "nox-metals",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "digipals",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "digipals",
+    "industry_id": 55
+  },
+  {
+    "company_slug": "blue",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "mixy",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "paloma",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "uplift-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "realroots",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "realroots",
+    "industry_id": 55
+  },
+  {
+    "company_slug": "luminal",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "luminal",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "freya",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "burnt",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "burnt",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "avent",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ruvo",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "veritus",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "veritus",
+    "industry_id": 53
+  },
+  {
+    "company_slug": "outrove",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "noso-labs",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "vulcan-technologies",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "vulcan-technologies",
+    "industry_id": 28
+  },
+  {
+    "company_slug": "geo-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "geo-ai",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "spotlight-realty",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "interfere",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "interfere",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "munify",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "rowflow",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rowflow",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "tectoai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "duranium",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "duranium",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "smartbase",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "smartbase",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "perspectives-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "perspectives-health",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "modelence",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "modelence",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "magnetic",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "magnetic",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "fleetline",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "fleetline",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "clodo",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "clodo",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "stagewise",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "stagewise",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "flywheel-ai",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "flywheel-ai",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "button-computer",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "button-computer",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "juxta",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "okibi",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pollen",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pollen",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "rebulk",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "rebulk",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "kernel",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "kernel",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "reacher",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "certus-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hera-video",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "hera-video",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "notte",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pally",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pally",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "locata",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "locata",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "fernstone",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "fernstone",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "pleom",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "pleom",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "convexia",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "convexia",
+    "industry_id": 22
+  },
+  {
+    "company_slug": "sigmanticai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sigmanticai",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "opennote",
+    "industry_id": 1
+  },
+  {
+    "company_slug": "sira",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "sira",
+    "industry_id": 30
+  },
+  {
+    "company_slug": "f4-industries",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "quotain",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "quotain",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "altur",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "foresight",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "foresight",
+    "industry_id": 19
+  },
+  {
+    "company_slug": "pares-ai",
+    "industry_id": 16
+  },
+  {
+    "company_slug": "avelis-health",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "avelis-health",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "nautilus",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "nautilus",
+    "industry_id": 47
+  },
+  {
+    "company_slug": "humoniq",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "maximal",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "maximal",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "idler",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "idler",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "floot",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "floot",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "os3",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "os3",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "alara",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "socratix-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "socratix-ai",
+    "industry_id": 51
+  },
+  {
+    "company_slug": "minimal-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "risely-ai",
+    "industry_id": 29
+  },
+  {
+    "company_slug": "miso-labs",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "miso-labs",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "omnara",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "omnara",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "knowlify",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "autosana",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "autosana",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "procindex",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "procindex",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "iron-grid",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "iron-grid",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "finto-de",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "finto-de",
+    "industry_id": 33
+  },
+  {
+    "company_slug": "autumn-ai",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "autumn-ai",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "motives",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "motives",
+    "industry_id": 37
+  },
+  {
+    "company_slug": "relling",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "relling",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "char",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "char",
+    "industry_id": 15
+  },
+  {
+    "company_slug": "manufact",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "manufact",
+    "industry_id": 35
+  },
+  {
+    "company_slug": "novaflow",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "perseus-defense",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "perseus-defense",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "phases",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "phases",
+    "industry_id": 42
+  },
+  {
+    "company_slug": "solva",
+    "industry_id": 4
+  },
+  {
+    "company_slug": "solva",
+    "industry_id": 43
+  },
+  {
+    "company_slug": "albacore-inc",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "albacore-inc",
+    "industry_id": 56
+  },
+  {
+    "company_slug": "physical-turing",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "physical-turing",
+    "industry_id": 11
+  },
+  {
+    "company_slug": "twentytwo",
+    "industry_id": 13
+  },
+  {
+    "company_slug": "twentytwo",
+    "industry_id": 21
+  },
+  {
+    "company_slug": "mimos",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "nozomio",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "nozomio",
+    "industry_id": 12
+  },
+  {
+    "company_slug": "vibeflow",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "comena",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "comena",
+    "industry_id": 36
+  },
+  {
+    "company_slug": "normal",
+    "industry_id": 9
+  },
+  {
+    "company_slug": "ghosteye",
+    "industry_id": 7
+  },
+  {
+    "company_slug": "ghosteye",
+    "industry_id": 38
+  }
+]

@@ -1,0 +1,19 @@
+https://www.ycombinator.com/companies/robots.txt page tidak ada. 404 not found
+
+https://www.ycombinator.com/robots.txt
+User-Agent: *
+Disallow: /verify/*
+Disallow: /library?categories=*&*
+Allow: /library?categories=*
+Disallow: /library?*
+Disallow: /companies?*
+Allow: /
+
+User-Agent: facebookexternalhit
+Allow: /verify/*
+
+User-Agent: Twitterbot
+Allow: /verify/*
+
+User-Agent: LinkedInBot
+Allow: /verify/*
