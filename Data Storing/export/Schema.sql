@@ -68,7 +68,8 @@ CREATE TABLE CompanyStatus (
 CREATE TABLE ScrapeSession (
     session_id SERIAL PRIMARY KEY,
     started_at TIMESTAMP NOT NULL DEFAULT NOW(),
-    session_number INT NOT NULL
+    session_number INT NOT NULL UNIQUE,
+    CONSTRAINT CK_Session_Number CHECK (session_number > 0)
 );
 
 -- Company: main entities. company_age ga disimpan sebagai kolom input karena udah diisi
@@ -195,7 +196,8 @@ CREATE TABLE Investment (
     contribution_usd BIGINT,
     CONSTRAINT FK_Inv_Round FOREIGN KEY (round_id) REFERENCES FundingRound(round_id) ON DELETE CASCADE,
     CONSTRAINT FK_Inv_Investor FOREIGN KEY (investor_id) REFERENCES Investor(investor_id),
-    CONSTRAINT UQ_Investment UNIQUE (round_id, investor_id)
+    CONSTRAINT UQ_Investment UNIQUE (round_id, investor_id),
+    CONSTRAINT CK_Inv_Contribution CHECK (contribution_usd IS NULL OR contribution_usd >= 0)
 );
 
 -- RELASI REKURSIF Company -> Company (role acquirer/acquired).
@@ -206,7 +208,8 @@ CREATE TABLE Acquisition (
     acquisition_date DATE,
     CONSTRAINT FK_Acq_Acquirer FOREIGN KEY (acquirer_slug) REFERENCES Company(slug),
     CONSTRAINT FK_Acq_Acquired FOREIGN KEY (acquired_slug) REFERENCES Company(slug),
-    CONSTRAINT CK_Acq_NotSelf CHECK (acquirer_slug <> acquired_slug)
+    CONSTRAINT CK_Acq_NotSelf CHECK (acquirer_slug <> acquired_slug),
+    CONSTRAINT UQ_Acquisition UNIQUE (acquirer_slug, acquired_slug)
 );
 
 
@@ -268,3 +271,28 @@ CREATE TRIGGER TrgCheckPublic BEFORE INSERT OR UPDATE ON PublicCompany
     FOR EACH ROW EXECUTE FUNCTION CheckSubtypeStatus();
 CREATE TRIGGER TrgCheckInactive BEFORE INSERT OR UPDATE ON InactiveCompany
     FOR EACH ROW EXECUTE FUNCTION CheckSubtypeStatus();
+
+
+-- Trigger 3: jaga konsistensi ISA saat status_id Company berubah. Trigger 2 cuma jalan di
+-- tabel subtipe, jadi UPDATE Company.status_id bisa bikin baris subtipe lama sticked
+CREATE OR REPLACE FUNCTION SyncSubtypeOnStatusChange()
+RETURNS TRIGGER AS $$
+DECLARE
+    NewStatus VARCHAR(20);
+BEGIN
+    SELECT status_name INTO NewStatus FROM CompanyStatus WHERE status_id = NEW.status_id;
+
+    IF NewStatus <> 'Active'   THEN DELETE FROM ActiveCompany   WHERE slug = NEW.slug; END IF;
+    IF NewStatus <> 'Acquired' THEN DELETE FROM AcquiredCompany WHERE slug = NEW.slug; END IF;
+    IF NewStatus <> 'Public'   THEN DELETE FROM PublicCompany   WHERE slug = NEW.slug; END IF;
+    IF NewStatus <> 'Inactive' THEN DELETE FROM InactiveCompany WHERE slug = NEW.slug; END IF;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER TrgSyncSubtype
+    AFTER UPDATE OF status_id ON Company
+    FOR EACH ROW
+    WHEN (OLD.status_id IS DISTINCT FROM NEW.status_id)
+    EXECUTE FUNCTION SyncSubtypeOnStatusChange();

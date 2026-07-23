@@ -14,7 +14,7 @@ status perusahaan (Active/Acquired/Public/Inactive), dan industri.
 Kenapa topik ini? Aku dari awal tertarik ke dunia start-up, tetapi ketika liat di sheets pemilihan topik/data, ternyata udah pernah diambil, dan karena berbeda substansi dari topik "Startup Unicorn Global" (CB Insights) yang sudah diambil peserta lain, dengan demikian aku ambil The YC Directory ini. The YC itu portofolio satu accelerator (mayoritas startup early-stage), dengan dimensi batch/founder/status yang memang khas dan ga ada di data ranking valuasi. Jadi walaupun sama-sama soal startup, angle datanya beda.
 
 **Data yang dihasilkan:** 995 company, 2140 founder, 3376 akun social founder, 1713 pairing
-company–industry, 90 lokasi unik, 59 industri, dan 37 batch YC.
+company industry, 90 lokasi unik, 59 industri, dan 37 batch YC.
 
 **DBMS:** PostgreSQL 16. Aku pilih relational (bukan NoSQL) karena datanya memang relasional
 banget, e.g., banyak relasi 1:N, M:N, weak entity, dan specialization yang lebih natural
@@ -52,7 +52,7 @@ Or run entire pipeline langsung(ini udh support **AUTOMATED SCHEDULING**)
 python "Data Storing/src/RunScheduledScrape.py"
 ```
 
-**Cara pakai output-nya:** hasil akhir scraping adalah 6 file JSON entities di
+**Cara pake output:** hasil akhir scraping adalah 6 file JSON entities di
 `Data Scraping/data/`. `StoreData.py` read 6 files itu lalu di-upsert ke PostgreSQL
 sesuai schema di `Data Storing/export/Schema.sql`. Setelah storing, data siap di-query lewat
 `psql` atau tool RDBMS lain.
@@ -91,18 +91,18 @@ Gambar ada di folder `Data Storing/design/`:
 - **Diagram Relasional:** `Data Storing/design/Relational Model - 13524026 - The Y Combinator Companies Directory.png`
 
 **Konstruk ERD yang dipakai:**
-- **Strong entity + PK**  Company, Batch, Industry, Founder, dll.
-- **1:N** — Company → Founder (parsial di sisi Company: ada 41 company tanpa founder di data).
-- **M:N + tabel penghubung** — Company ↔ Industry lewat CompanyIndustry.
-- **Weak entity** — FounderSocial, diidentifikasi oleh Founder + url sebagai discriminator
+- **Strong entity + PK**: Company, Batch, Industry, Founder, dll.
+- **1:N**: Company → Founder (parsial di sisi Company: ada 41 company tanpa founder di data).
+- **M:N + tabel penghubung**: Company ↔ Industry lewat CompanyIndustry.
+- **Weak entity**: FounderSocial, diidentifikasi oleh Founder + url sebagai discriminator
   (sumber YC ga kasih ID global untuk akun social).
-- **Composite attribute** — lokasi (city/state/country), batch (season/year).
-- **Derived attribute** — `company_age` (dihitung dari `founded_year`, diisi trigger).
-- **Specialization / ISA** disjoint + total — Company → Active/Acquired/Public/Inactive
+- **Composite attribute**: lokasi (city/state/country), batch (season/year).
+- **Derived attribute**: `company_age` (dihitung dari `founded_year`, diisi trigger).
+- **Specialization / ISA**: disjoint + total, Company → Active/Acquired/Public/Inactive
   berdasar status.
-- **Aggregation** — Investment: relasi Company–FundingRound dibungkus, lalu direlasikan ke
+- **Aggregation**: Investment: relasi Company dan FundingRound di-wrapped, lalu direlasikan ke
   Investor.
-- **Rekursif (unary)** — Acquisition: Company mengakuisisi Company, dengan role
+- **Rekursif (unary)**: Acquisition: Company mengakuisisi Company, dengan role
   acquirer/acquired.
 
 ### Alasan dan keputusan desain ERD
@@ -123,7 +123,7 @@ Gambar ada di folder `Data Storing/design/`:
 - **ISA/specialization** dipakai karena tiap subtype punya atribut lokal yang cuma relevan
   untuk sebagian company (e.g., `acquisition_date` cuma untuk AcquiredCompany).
 - **Aggregation, bukan ternary Company-Round-Investor.** Investasi lebih cocok nempel ke
-  relasi Company–FundingRound, bukan ke Company langsung. Satu funding round itu event antara
+  relasi Company- FundingRound, bukan ke Company langsung. Satu funding round itu event antara
   company dan ≥1 investor, while investor mendanai round tertentu yang udh terikat ke company,
   bukan mendanai company abstrak. Kalau Investor -> Company langsung, info "round berapa"
   hilang dan jadiny ambigu sih.
@@ -167,7 +167,7 @@ lalu diperiksa apakah tiap determinan adalah superkey atau ga.
 
 ### Keputusan teknis saat reduksi (yang baru muncul di implementasi)
 
-- **Arah FK & nullability.** Semua FK 1:N nempel di sisi banyak (Company). Nullability
+- **Arah FK & nullability.** Semua FK 1:N stick di sisi banyak (Company). Nullability
   disamakan dengan kenyataan data: `location_id` & `session_id` boleh NULL (ada company tanpa
   lokasi; company bisa ada sebelum sesi pertama), `status_id` NOT NULL (tiap company pasti
   punya status), `batch_id` dibiarkan nullable (walau cuma 1 company kosong) biar ga maksa.
@@ -283,11 +283,7 @@ menghasilkan data duplicates di database.
 
 ### Mekanisme
 
-`Data Storing/src/RunScheduledScrape.py` run the entire pipeline berurutan
-(`ScrapeList.py` → `ScrapeDetail.py` → `Preprocess.py` → `StoreData.py` → `LoadWarehouse.py`),
-dan berhenti kalau ada tahap yang gagal. Tahap terakhir me-refresh data warehouse (Bonus 1)
-supaya keseluruhan proses beneran end-to-end. Script ini didaftarkan ke **cron** (Linux) /
-**launchd** (macOS) supaya jalan otomatis tiap interval tertentu.
+`Data Storing/src/RunScheduledScrape.py` run the entire pipeline berurutan (`ScrapeList.py` → `ScrapeDetail.py` → `Preprocess.py` → `StoreData.py` →`LoadWarehouse.py`), dan berhenti kalau ada tahap yang gagal. Tahap terakhir me-refresh data warehouse (Bonus 1) supaya keseluruhan proses beneran end-to-end. Script ini didaftarkan ke **cron** (Linux) / **launchd** (macOS) supaya jalan otomatis tiap interval tertentu.
 
 Contoh entri crontab (jalan tiap hari jam 03:00, sesuaikan path venv & repo):
 
@@ -297,33 +293,30 @@ Contoh entri crontab (jalan tiap hari jam 03:00, sesuaikan path venv & repo):
   TUGAS_SELEKSI_1_13524026/scheduled_run.log 2>&1
 ```
 
-Daftarkan dengan `crontab -e`, tempel baris di atas (path disesuaikan), save. Cek jadwal
-aktif dengan `crontab -l`.
+Pakai `crontab -e`, stick row di atas (path disesuaikan), save. Cek schedule aktif dengan `crontab -l`.
 
 ### Mencegah redundansi data
 
-`StoreData.py` melakukan **upsert**, bukan `INSERT` mentah, sehingga run kedua/ketiga dst
-tidak membuat baris duplikat:
+`StoreData.py` melakukan **upsert**, bukan `INSERT` aja sehingga run kedua/ketiga dst
+tidak membuat row duplikat:
 
-- **Company** — `ON CONFLICT (slug) DO UPDATE` (slug = natural key stabil dari URL YC).
-  Subtipe ISA direkonsiliasi manual: kalau status company berubah antar-run (mis. Active →
-  Acquired), baris di subtipe lama dihapus, baris baru ditambahkan ke subtipe yang sesuai.
-- **Industry** — upsert by `name` (bukan `industry_id` dari JSON, karena ID di-assign ulang
+- **Company**: `ON CONFLICT (slug) DO UPDATE` (slug = natural key stabil dari URL YC).
+  Subtipe ISA direkonsiliasi manual: kalau status company berubah antar-run (mis. Active → Acquired), baris di subtipe lama dihapus, baris baru ditambahkan ke subtipe yang sesuai.
+- **Industry**: upsert by `name` (bukan `industry_id` dari JSON, karena ID di-assign ulang
   tiap run).
-- **Founder** — di-resolve by `(company_slug, name)`. Founder & FounderSocial milik satu
+- **Founder**:di-resolve by `(company_slug, name)`. Founder & FounderSocial milik satu
   company dihapus lalu ditulis ulang tiap run supaya data selalu cerminan run terbaru (ga ada
   baris basi menumpuk kalau founder ganti akun social).
-- **Location** — upsert by kombinasi (city, state, country) dengan `COALESCE(..., '')` di
+- **Location**:upsert by kombinasi (city, state, country) dengan `COALESCE(..., '')` di
   unique index supaya kombinasi ber-NULL tetap terdeteksi duplikat.
 
-### Bukti: perbedaan timestamp ekstraksi antar-run
+### Proof: perbedaan timestamp ekstraksi antar-run
 
 Tabel `ScrapeSession` mencatat satu baris per run (`session_id`, `started_at`,
-`session_number`). Tiap `Company` menyimpan FK `session_id` yang menunjuk ke sesi **terakhir**
-yang meng-upsert baris tersebut.
+`session_number`). Tiap `Company` menyimpan FK `session_id` yang menunjuk ke sesi terakhir yang meng-upsert baris tersebut.
 
-`StoreData.py` dijalankan tiga kali berturut-turut terhadap data scraping yang sama
-(2026-07-23) untuk validasi, hasil `SELECT * FROM ScrapeSession ORDER BY session_id`:
+`StoreData.py` di-run tiga kali berturut-turut terhadap data scraping yang sama
+(2026-07-23) buat validasi, hasil `SELECT * FROM ScrapeSession ORDER BY session_id`:
 
 | session_id | started_at | session_number |
 |---|---|---|
@@ -331,61 +324,120 @@ yang meng-upsert baris tersebut.
 | 2 | 2026-07-23 18:41:33.567601 | 2 |
 | 3 | 2026-07-23 18:41:34.079196 | 3 |
 
-Setelah run ke-3, seluruh 995 baris Company menunjuk `session_id = 3` (run terbaru) —
-`SELECT session_id, COUNT(*) FROM Company GROUP BY session_id` mengembalikan `3 | 995`, tanpa
-ada baris nyangkut di sesi lama. Row count tabel data (Company 995, Founder 2140,
-FounderSocial 3376, CompanyIndustry 1713, Location 90, Industry 59, Batch 37) **identik** di
-ketiga run — bukti tidak ada redundansi meski pipeline dijalankan berulang.
+Setelah run ke-3, seluruh 995 baris Company menunjuk `session_id = 3` (run terbaru),
+`SELECT session_id, COUNT(*) FROM Company GROUP BY session_id` mengembalikan `3 | 995`, tanpa ada baris nyangkut di sesi lama. Row count tabel data (Company 995, Founder 2140, FounderSocial 3376, CompanyIndustry 1713, Location 90, Industry 59, Batch 37) identik di
+ketiga run, bukti ga ada redundansi meski pipeline dijalankan berulang.
 
 ## Bonus 1: Data Warehouse
 
-Aku bikin data warehouse di database terpisah `yc_dwh` (OLAP), sumbernya dari `yc_startup`
-(OLTP). Skemanya **GALAXY / fact-constellation** — dua fact table beda grain yang share
-dimensi. Aku pilih galaxy (bukan star biasa) karena datanya memang mendukung dua level
-analisis: company-level dan founder-level, dan keduanya bisa diisi beneran (bukan tabel
-kosong).
+Aku bikin data warehouse di database terpisah `yc_dwh` (OLAP), sourcenya dari `yc_startup` (OLTP). schema yang digunakan adalah **GALAXY / fact-constellation**, dua fact table beda grain yang share dimensi. Aku pilih galaxy (bukan star biasa) karena datanya memang mendukung dua level analisis yakni company-level dan founder-level, dan keduanya bisa diisi beneran (bukan tables kosong).
 
-Gambar skema ada di `Data Warehous/design/`.
+Desain schema ada di `Data Warehouse/design/`.
 
-**Struktur (mengikuti materi 020 — fact di tengah, dimensi mengelilingi, measure di fact):**
+**Struktur:**
 
-- **Fact 1 — `FactCompany`** (grain: 1 baris/company). Measures: `team_size`, `company_age`,
+- **Fact 1 `FactCompany`** (grain: 1 baris/company). Measures: `team_size`, `company_age`,
   `founder_count`, `industry_count`.
-- **Fact 2 — `FactFounder`** (grain: 1 baris/founder). Measures: `social_count` + breakdown
+- **Fact 2 `FactFounder`** (grain: 1 baris/founder). Measures: `social_count` + breakdown
   `linkedin_count`/`twitter_count`/`github_count`.
 - **Dimensi shared:** `DimBatch` (season/year/quarter — ini "DimWaktu" versi YC),
   `DimLocation` (city/state/country), `DimStatus`, `DimIndustry`.
-- **`BridgeCompanyIndustry`** — jembatan M:N FactCompany ↔ DimIndustry.
-
-Kedua fact share `DimBatch`/`DimLocation`/`DimStatus` (founder mewarisi dimensi dari
-company-nya) — inilah yang bikin skemanya galaxy, bukan star tunggal.
+- **`BridgeCompanyIndustry`** jembatan M:N FactCompany ↔ DimIndustry.
 
 **File:**
-- `Data Warehous/export/WarehouseSchema.sql` — DDL galaxy schema
-- `Data Warehous/export/yc_dwh_dump.sql` — hasil export (schema + data) via `pg_dump`
-- `Data Warehous/src/LoadWarehouse.py` — ETL loader OLTP → warehouse (full-refresh, idempotent)
-- `Data Warehous/src/AnalyticalQueries.sql` — 5 contoh query analitik
+- `Data Warehous/export/WarehouseSchema.sql`: DDL galaxy schema
+- `Data Warehous/export/yc_dwh_dump.sql`: hasil export (schema + data) via `pg_dump`
+- `Data Warehous/src/LoadWarehouse.py`: ETL loader OLTP → warehouse (full-refresh, idempotent)
+- `Data Warehous/src/AnalyticalQueries.sql`: 5 contoh query
 
-**Cara jalanin:**
+**How to run:**
 
 ```bash
-createdb yc_dwh   # atau: psql -c "CREATE DATABASE yc_dwh"
+createdb yc_dwh #or: psql -c "CREATE DATABASE yc_dwh"
 psql -d yc_dwh -f "Data Warehous/export/WarehouseSchema.sql"
 python "Data Warehous/src/LoadWarehouse.py"
 ```
 
-**Contoh query analitik** (lengkap di `AnalyticalQueries.sql`) — memanfaatkan struktur
-multidimensional: roll-up (rata-rata measure per tahun batch), slice (status per negara),
-dice via bridge (industri terpopuler per batch), dan **cross-fact** (gabung FactCompany +
-FactFounder lewat shared dimension — cuma mungkin karena galaxy schema).
+**Contoh query analitik** (lengkap di `AnalyticalQueries.sql`), intinya di sana memanfaatkan struktur multidimensional seperti roll-up (rata-rata measure per tahun batch), slice (status per negara), dice via bridge (industri terpopuler per batch), dan **cross-fact** (gabung FactCompany danFactFounder lewat shared dimension). Screenshot ada di `Data Warehous/screenshot/`.
 
-Warehouse ter-load: 995 FactCompany, 2140 FactFounder, 4 dimensi (37/90/4/59), bridge 1713.
+### 1. Roll-up: rata-rata team_size & company_age per tahun batch
+
+```sql
+SELECT b.year, COUNT(*) AS n_company,
+       ROUND(AVG(fc.team_size),1) AS avg_team,
+       ROUND(AVG(fc.company_age),1) AS avg_age
+FROM FactCompany fc JOIN DimBatch b ON fc.batch_key = b.batch_key
+GROUP BY b.year
+ORDER BY b.year DESC;
+```
+
+![Analytic 1](Data%20Warehous/screenshot/1.png)
+
+### 2. Slice: distribusi status company per negara
+
+```sql
+SELECT l.country, s.status_name, COUNT(*) AS n
+FROM FactCompany fc
+JOIN DimLocation l ON fc.location_key = l.location_key
+JOIN DimStatus s ON fc.status_key = s.status_key
+WHERE l.country IN ('USA','United Kingdom','Canada')
+GROUP BY l.country, s.status_name
+ORDER BY l.country, n DESC;
+```
+
+![Analytic 2](Data%20Warehous/screenshot/2.png)
+
+### 3. FactFounder: total akun social per platform per status company
+
+```sql
+SELECT s.status_name,
+       COUNT(*) AS n_founder,
+       SUM(ff.linkedin_count) AS linkedin,
+       SUM(ff.twitter_count) AS twitter,
+       SUM(ff.github_count) AS github
+FROM FactFounder ff JOIN DimStatus s ON ff.status_key = s.status_key
+GROUP BY s.status_name
+ORDER BY n_founder DESC;
+```
+
+![Analytic 3](Data%20Warehous/screenshot/3.png)
+
+### 4. Dice via bridge: industri terpopuler untuk company batch tahun 2026
+
+```sql
+SELECT i.industry_name, COUNT(*) AS n_company
+FROM FactCompany fc
+JOIN DimBatch b ON fc.batch_key = b.batch_key
+JOIN BridgeCompanyIndustry br ON br.company_key = fc.company_key
+JOIN DimIndustry i ON i.industry_key = br.industry_key
+WHERE b.year = 2026
+GROUP BY i.industry_name
+ORDER BY n_company DESC
+LIMIT 10;
+```
+
+![Analytic 4](Data%20Warehous/screenshot/4.png)
+
+### 5. Cross-fact: bandingkan measure dua fact table lewat shared dimension DimStatus
+
+```sql
+SELECT s.status_name,
+       ROUND(AVG(fc.founder_count),2) AS avg_founder_per_company,
+       (SELECT ROUND(AVG(ff.social_count),2)
+        FROM FactFounder ff WHERE ff.status_key = s.status_key) AS avg_social_per_founder
+FROM FactCompany fc JOIN DimStatus s ON fc.status_key = s.status_key
+GROUP BY s.status_name, s.status_key
+ORDER BY avg_founder_per_company DESC;
+```
+
+![Analytic 5](Data%20Warehous/screenshot/5.png)
 
 ## Bonus 3: Query Optimasi
 
 Aku bikin 3 query optimasi pakai **index** pada kolom yang sering difilter tapi belum
-ada index-nya (semua di tabel `Company`, awalnya kena Seq Scan). File:
-`Data Storing/src/Optimization.sql` (berisi EXPLAIN ANALYZE sebelum & sesudah + bukti hash).
+ada index-nya (semua di tabel `Company`, awalnya kena Seq Scan). Ada di folder
+`Data Storing/Query Optimasi/` — `Optimization.sql` (berisi EXPLAIN ANALYZE sebelum &
+sesudah + bukti hash) dan `optimization.png` (screenshot bukti query lebih optimal).
 
 | Query | Filter | Sebelum | Sesudah | Index |
 |---|---|---|---|---|
@@ -394,7 +446,7 @@ ada index-nya (semua di tabel `Company`, awalnya kena Seq Scan). File:
 | Q3 | `status_id=1 AND team_size>100` | Seq Scan ~0.23ms | Bitmap Index Scan ~0.03ms | `IdxCompanyStatusTeam` (composite) |
 
 **Bukti output identik:** index cuma mengubah *cara akses*, bukan hasil. Aku verifikasi
-dengan hash MD5 dari hasil query — sebelum == sesudah untuk ketiganya:
+dengan hash MD5 dari hasil query, sebelum == sesudah untuk ketiganya:
 
 ```
 Q1 | 188 baris | 13094960c0c2053d75b07210dab84660
@@ -404,11 +456,40 @@ Q3 |  86 baris | b28806e0b12d140b4e6f1b3d811e450e
 
 Index ini sengaja **tidak** aku taruh di `Schema.sql` biar transisi Seq Scan → Index Scan bisa direproduksi dari nol.
 
+Screenshot bukti (satu gambar full: EXPLAIN ANALYZE sebelum → `CREATE INDEX` → sesudah untuk ketiga query, ditutup hash output yang identik):
+
+![Query Optimasi](Query%20Optimasi/optimization.png)
+
+## Acknowledgment Penggunaan AI
+
+Aku pakai AI dalam pengerjaan tugas ini, dan aku jujur tuliskan di sini secara detail sesuai rules yg ada. Sebelumnya, seluruh ide dan keputusan inti tugas ini dariku, pemilihan topik/data (The YC Directory), desain ERD, desain relational model, desain fact table & skema data warehouse, keputusan normalisasi, penggunaan trigger/function (dan aspek schema lainnya), serta flow dan mekanisme semua script. AI aku posisikan sebagai tools pembantu. Sebagai contoh selain penjelasan di bawah ini, aku ngetik manual file readme ini, dan setelah semua beres, aku minta AI buat bantu rapiin, tambah visualisasi markdown misalnya bold, file, etc.
+
+### Bagian yang dibantu AI
+
+**1. Data Scraping.** Jujurrr ini bagian yang paling banyak aku brainstorming bareng AI. Gimana caranya scrape data yang benar dari page YC yang JS-rendered, dan gimana caranya preprocessing sampai datanya benar-benar clean. Di sini aku iteratif, scrape -> cek hasil -> refine parsing/cleaning -> repeat. Aku sengaja intens di tahap ini karena scraping adalah proses paling awal dan crucial, kl datanya salah di sini, semua step berikutnya (storing, modeling, warehouse) pasti ikut salah jg.
+
+**2. Data Storing.** AI membantu di pembuatan script `StoreData.py` dan `RunScheduledScrape.py`, tapi keputusan desain,strat, flow, dan mekanisme semuanya dariku (e.g., strategi upsert biar ga redundan, rekonsiliasi subtype ISA, resolve founder by natural key). Tools AI di sini terbatas pada **debug syntax**. Desain `Schema.sql` struktur tabel, keputusan constraint, trigger/function, sepenuhnya dariku. Query dan testing juga aku lakukan sendiri.
+
+**3. Data Warehouse.** Sama seperti storing atas, desain galaxy schema (fact table, dimension, bridge, grain) dan keputusan dariku. AI membantu di pembuatan script `LoadWarehouse.py` (loader ETL) dan debug syntax. Contoh query analitik aku susun dan test sendiri.
+
+**4. Dokumentasi (fokus utama).** seperti yang sudah aku jelaskan sebelumnya
+
+### Bagian yang dikerjakan sendiri
+
+- Pemilihan topik & data, serta seluruh proses scraping/preprocessing (iteratif dengan guidance dan debug dari tools AI)
+- Seluruh desain ERD, relational model, dan fact table / skema data warehouse
+- Pembuatan `Schema.sql`, keputusan desain, constraint, trigger/function, etc.
+- Query testing dan verifikasi hasil.
+
+### Refleksi
+
+Menurutku tools AI paling berguna as partner brainstorming di tahap scraping (yang memang paling banyak trial and error, karena jujur sebelumnya jg ga pernah scraping data) dan sebagai tools untuk merapikan dokumentasi biar rapi dan enak dibaca. Tapi bagian yang menentukan kualitas tugas ini, keputusan desain database, tetap harus dari pemahamanku sendiri (Ya namanya juga seleksi ASISTEN BASDAT, bakal aneh kalau ga paham sama tugas dan materi basis data sendiri), karena AI tidak tahu konteks data dan trade-off yang aku hadapi tanpa aku arahkan.
+
 ## Referensi
 
-- **Sumber data:** `https://www.ycombinator.com/companies`
+- **Source data:** `https://www.ycombinator.com/companies`
 - **Library:**
-  - Playwright (Python) — headless browser scraping
-  - psycopg 3 — PostgreSQL driver
+  - Playwright (Python): headless browser scraping
+  - psycopg 3: PostgreSQL driver
 - **RDBMS:** PostgreSQL 16
-- **Materi acuan desain ERD:** Silberschatz, *Database System Concepts* 7e
+- **Materi acuan desain ERD:** Silberschatz, *Database System Concepts* 7e dan slides kuliah yang pada dasarnay sudah merangkum materi dari textbook tersebut

@@ -6,12 +6,14 @@ from pathlib import Path
 RepoRoot = Path(__file__).resolve().parent.parent.parent
 ScrapingSrc = RepoRoot / "Data Scraping" / "src"
 StoringSrc = RepoRoot / "Data Storing" / "src"
+WarehouseSrc = RepoRoot / "Data Warehous" / "src"
 
 Pipeline = [
     ScrapingSrc / "ScrapeList.py",
     ScrapingSrc / "ScrapeDetail.py",
     ScrapingSrc / "Preprocess.py",
     StoringSrc / "StoreData.py",
+    WarehouseSrc / "LoadWarehouse.py",
 ]
 
 
