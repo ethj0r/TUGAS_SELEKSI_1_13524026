@@ -284,9 +284,10 @@ menghasilkan data duplicates di database.
 ### Mekanisme
 
 `Data Storing/src/RunScheduledScrape.py` run the entire pipeline berurutan
-(`ScrapeList.py` → `ScrapeDetail.py` → `Preprocess.py` → `StoreData.py`), dan berhenti kalau
-ada tahap yang gagal. Script ini didaftarkan ke **cron** (Linux) / **launchd** (macOS) supaya
-jalan otomatis tiap interval tertentu.
+(`ScrapeList.py` → `ScrapeDetail.py` → `Preprocess.py` → `StoreData.py` → `LoadWarehouse.py`),
+dan berhenti kalau ada tahap yang gagal. Tahap terakhir me-refresh data warehouse (Bonus 1)
+supaya keseluruhan proses beneran end-to-end. Script ini didaftarkan ke **cron** (Linux) /
+**launchd** (macOS) supaya jalan otomatis tiap interval tertentu.
 
 Contoh entri crontab (jalan tiap hari jam 03:00, sesuaikan path venv & repo):
 
@@ -335,6 +336,73 @@ Setelah run ke-3, seluruh 995 baris Company menunjuk `session_id = 3` (run terba
 ada baris nyangkut di sesi lama. Row count tabel data (Company 995, Founder 2140,
 FounderSocial 3376, CompanyIndustry 1713, Location 90, Industry 59, Batch 37) **identik** di
 ketiga run — bukti tidak ada redundansi meski pipeline dijalankan berulang.
+
+## Bonus 1: Data Warehouse
+
+Aku bikin data warehouse di database terpisah `yc_dwh` (OLAP), sumbernya dari `yc_startup`
+(OLTP). Skemanya **GALAXY / fact-constellation** — dua fact table beda grain yang share
+dimensi. Aku pilih galaxy (bukan star biasa) karena datanya memang mendukung dua level
+analisis: company-level dan founder-level, dan keduanya bisa diisi beneran (bukan tabel
+kosong).
+
+Gambar skema ada di `Data Warehous/design/`.
+
+**Struktur (mengikuti materi 020 — fact di tengah, dimensi mengelilingi, measure di fact):**
+
+- **Fact 1 — `FactCompany`** (grain: 1 baris/company). Measures: `team_size`, `company_age`,
+  `founder_count`, `industry_count`.
+- **Fact 2 — `FactFounder`** (grain: 1 baris/founder). Measures: `social_count` + breakdown
+  `linkedin_count`/`twitter_count`/`github_count`.
+- **Dimensi shared:** `DimBatch` (season/year/quarter — ini "DimWaktu" versi YC),
+  `DimLocation` (city/state/country), `DimStatus`, `DimIndustry`.
+- **`BridgeCompanyIndustry`** — jembatan M:N FactCompany ↔ DimIndustry.
+
+Kedua fact share `DimBatch`/`DimLocation`/`DimStatus` (founder mewarisi dimensi dari
+company-nya) — inilah yang bikin skemanya galaxy, bukan star tunggal.
+
+**File:**
+- `Data Warehous/export/WarehouseSchema.sql` — DDL galaxy schema
+- `Data Warehous/export/yc_dwh_dump.sql` — hasil export (schema + data) via `pg_dump`
+- `Data Warehous/src/LoadWarehouse.py` — ETL loader OLTP → warehouse (full-refresh, idempotent)
+- `Data Warehous/src/AnalyticalQueries.sql` — 5 contoh query analitik
+
+**Cara jalanin:**
+
+```bash
+createdb yc_dwh   # atau: psql -c "CREATE DATABASE yc_dwh"
+psql -d yc_dwh -f "Data Warehous/export/WarehouseSchema.sql"
+python "Data Warehous/src/LoadWarehouse.py"
+```
+
+**Contoh query analitik** (lengkap di `AnalyticalQueries.sql`) — memanfaatkan struktur
+multidimensional: roll-up (rata-rata measure per tahun batch), slice (status per negara),
+dice via bridge (industri terpopuler per batch), dan **cross-fact** (gabung FactCompany +
+FactFounder lewat shared dimension — cuma mungkin karena galaxy schema).
+
+Warehouse ter-load: 995 FactCompany, 2140 FactFounder, 4 dimensi (37/90/4/59), bridge 1713.
+
+## Bonus 3: Query Optimasi
+
+Aku bikin 3 query optimasi pakai **index** pada kolom yang sering difilter tapi belum
+ada index-nya (semua di tabel `Company`, awalnya kena Seq Scan). File:
+`Data Storing/src/Optimization.sql` (berisi EXPLAIN ANALYZE sebelum & sesudah + bukti hash).
+
+| Query | Filter | Sebelum | Sesudah | Index |
+|---|---|---|---|---|
+| Q1 | `batch_id = 'Wi26'` | Seq Scan ~2.1ms | Bitmap Index Scan ~0.09ms | `IdxCompanyBatch` |
+| Q2 | `founded_year BETWEEN 2010 AND 2015` | Seq Scan ~0.28ms | Index Scan ~0.06ms | `IdxCompanyFounded` |
+| Q3 | `status_id=1 AND team_size>100` | Seq Scan ~0.23ms | Bitmap Index Scan ~0.03ms | `IdxCompanyStatusTeam` (composite) |
+
+**Bukti output identik:** index cuma mengubah *cara akses*, bukan hasil. Aku verifikasi
+dengan hash MD5 dari hasil query — sebelum == sesudah untuk ketiganya:
+
+```
+Q1 | 188 baris | 13094960c0c2053d75b07210dab84660
+Q2 | 175 baris | e6cf3d72f889bddca832f04c8a2f50fb
+Q3 |  86 baris | b28806e0b12d140b4e6f1b3d811e450e
+```
+
+Index ini sengaja **tidak** aku taruh di `Schema.sql` biar transisi Seq Scan → Index Scan bisa direproduksi dari nol.
 
 ## Referensi
 
