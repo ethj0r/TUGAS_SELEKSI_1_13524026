@@ -13,7 +13,7 @@ status perusahaan (Active/Acquired/Public/Inactive), dan industri.
 
 Kenapa topik ini? Aku dari awal tertarik ke dunia start-up, tetapi ketika liat di sheets pemilihan topik/data, ternyata udah pernah diambil, dan karena berbeda substansi dari topik "Startup Unicorn Global" (CB Insights) yang sudah diambil peserta lain, dengan demikian aku ambil The YC Directory ini. The YC itu portofolio satu accelerator (mayoritas startup early-stage), dengan dimensi batch/founder/status yang memang khas dan ga ada di data ranking valuasi. Jadi walaupun sama-sama soal startup, angle datanya beda.
 
-**Data yang dihasilkan:** 995 company, 2360 founder, 3626 akun social founder, 1713 pairing
+**Data yang dihasilkan:** 995 company, 2140 founder, 3376 akun social founder, 1713 pairing
 company–industry, 90 lokasi unik, 59 industri, dan 37 batch YC.
 
 **DBMS:** PostgreSQL 16. Aku pilih relational (bukan NoSQL) karena datanya memang relasional
@@ -74,8 +74,8 @@ Semua ada di `Data Scraping/data/`. Data dipisah per entities sbg berikut.
 | `batches.json` | 37 | batch_id (PK, mis. `Sp26`), season, year — cohort YC |
 | `industries.json` | 59 | industry_id, name |
 | `company_industries.json` | 1713 | company_slug + industry_id — pasangan M:N |
-| `founders.json` | 2360 | founder_id, company_slug, name — 1:N dari company |
-| `founder_socials.json` | 3626 | founder_id, platform, url — akun social (entitas lemah) |
+| `founders.json` | 2140 | founder_id, company_slug, name — 1:N dari company |
+| `founder_socials.json` | 3376 | founder_id, platform, url — akun social (entitas lemah) |
 
 `RawCompanies.json` (hasil `ScrapeList.py`) dan `RawDetails.json` (hasil `ScrapeDetail.py`)
 adalah raw data sebelum di-`Preprocess.py`. Preprocessing melakukan cleaning
@@ -92,7 +92,7 @@ Gambar ada di folder `Data Storing/design/`:
 
 **Konstruk ERD yang dipakai:**
 - **Strong entity + PK**  Company, Batch, Industry, Founder, dll.
-- **1:N** — Company → Founder (parsial di sisi Company: ada 33 company tanpa founder di data).
+- **1:N** — Company → Founder (parsial di sisi Company: ada 41 company tanpa founder di data).
 - **M:N + tabel penghubung** — Company ↔ Industry lewat CompanyIndustry.
 - **Weak entity** — FounderSocial, diidentifikasi oleh Founder + url sebagai discriminator
   (sumber YC ga kasih ID global untuk akun social).
@@ -186,14 +186,95 @@ lalu diperiksa apakah tiap determinan adalah superkey atau ga.
 
 ## Screenshot
 
-Bukti proses scraping (`Data Scraping/screenshot/`):
+Bukti penyimpanan data ke RDBMS query `SELECT ... FROM ... WHERE ...` (screenshot ada di
+`Data Storing/screenshot/`). File query lengkap di `Data Storing/screenshot/queries.sql`.
 
-<!-- ![Scraping](Data Scraping/screenshot/NAMA_FILE.png) -->
+### 1. Company pada batch tertentu + status (FK Company->Batch, JOIN CompanyStatus)
 
-Bukti penyimpanan data ke RDBMS — query `SELECT ... FROM ... WHERE ...`
-(`Data Storing/screenshot/`):
+```sql
+SELECT c.slug, c.name, s.status_name, c.team_size
+FROM Company c
+JOIN CompanyStatus s ON c.status_id = s.status_id
+WHERE c.batch_id = 'Wi26'
+ORDER BY c.name
+LIMIT 10;
+```
 
-<!-- ![Query SELECT](Data Storing/screenshot/NAMA_FILE.png) -->
+![Query 1](Data%20Storing/screenshot/1.png)
+
+### 2. Company di kota tertentu (JOIN Company x Location, FK location_id)
+
+```sql
+SELECT c.slug, c.name, l.city, l.state, l.country
+FROM Company c
+JOIN Location l ON c.location_id = l.location_id
+WHERE l.city = 'San Francisco'
+LIMIT 10;
+```
+
+![Query 2](Data%20Storing/screenshot/2.png)
+
+### 3. Derived attribute company_age (kolom yang diisi trigger)
+
+```sql
+SELECT slug, name, founded_year, company_age
+FROM Company
+WHERE company_age IS NOT NULL AND founded_year < 2015
+ORDER BY founded_year
+LIMIT 10;
+```
+
+![Query 3](Data%20Storing/screenshot/3.png)
+
+### 4. M:N Company <-> Industry pada industri tertentu (via CompanyIndustry)
+
+```sql
+SELECT c.name AS company, i.name AS industry
+FROM Company c
+JOIN CompanyIndustry ci ON c.slug = ci.company_slug
+JOIN Industry i ON ci.industry_id = i.industry_id
+WHERE i.name = 'Analytics'
+LIMIT 10;
+```
+
+![Query 4](Data%20Storing/screenshot/4.png)
+
+### 5. ISA subtype company yang berstatus Public (via tabel PublicCompany)
+
+```sql
+SELECT c.name, s.status_name
+FROM Company c
+JOIN PublicCompany p ON c.slug = p.slug
+JOIN CompanyStatus s ON c.status_id = s.status_id
+WHERE s.status_name = 'Public'
+LIMIT 10;
+```
+
+![Query 5](Data%20Storing/screenshot/5.png)
+
+### 6. Weak entity FounderSocial + VIEW platform (derived dari url)
+
+```sql
+SELECT f.name AS founder, v.platform, v.url
+FROM Founder f
+JOIN FounderSocialView v ON f.founder_id = v.founder_id
+WHERE v.platform = 'GitHub'
+LIMIT 10;
+```
+
+![Query 6](Data%20Storing/screenshot/6.png)
+
+### 7. Bukti scheduling: Company linked ke ScrapeSession
+
+```sql
+SELECT ss.session_id, ss.started_at, ss.session_number, COUNT(c.slug) AS company_count
+FROM ScrapeSession ss
+JOIN Company c ON c.session_id = ss.session_id
+WHERE ss.session_number = 1
+GROUP BY ss.session_id, ss.started_at, ss.session_number;
+```
+
+![Query 7](Data%20Storing/screenshot/7.png)
 
 ## Bonus 2: Automated Scheduling
 
@@ -241,18 +322,18 @@ Tabel `ScrapeSession` mencatat satu baris per run (`session_id`, `started_at`,
 yang meng-upsert baris tersebut.
 
 `StoreData.py` dijalankan tiga kali berturut-turut terhadap data scraping yang sama
-(2026-07-23) untuk validasi — hasil `SELECT * FROM ScrapeSession ORDER BY session_id`:
+(2026-07-23) untuk validasi, hasil `SELECT * FROM ScrapeSession ORDER BY session_id`:
 
 | session_id | started_at | session_number |
 |---|---|---|
-| 1 | 2026-07-23 14:54:21.691305 | 1 |
-| 2 | 2026-07-23 14:54:22.143453 | 2 |
-| 3 | 2026-07-23 14:54:39.000226 | 3 |
+| 1 | 2026-07-23 18:24:12.201249 | 1 |
+| 2 | 2026-07-23 18:41:33.567601 | 2 |
+| 3 | 2026-07-23 18:41:34.079196 | 3 |
 
 Setelah run ke-3, seluruh 995 baris Company menunjuk `session_id = 3` (run terbaru) —
 `SELECT session_id, COUNT(*) FROM Company GROUP BY session_id` mengembalikan `3 | 995`, tanpa
-ada baris nyangkut di sesi lama. Row count tabel data (Company 995, Founder 2360,
-FounderSocial 3626, CompanyIndustry 1713, Location 90, Industry 59, Batch 37) **identik** di
+ada baris nyangkut di sesi lama. Row count tabel data (Company 995, Founder 2140,
+FounderSocial 3376, CompanyIndustry 1713, Location 90, Industry 59, Batch 37) **identik** di
 ketiga run — bukti tidak ada redundansi meski pipeline dijalankan berulang.
 
 ## Referensi
