@@ -10,6 +10,7 @@ RawDetailsPath = DataDir / "RawDetails.json"
 
 KnownSeasons = ("Winter", "Spring", "Summer", "Fall")
 SeasonCode = {"Winter": "Wi", "Spring": "Sp", "Summer": "Su", "Fall": "Fa"}
+FactLabelNames = ("Founded", "Batch", "Team Size", "Status", "Location")
 
 
 # @desc parse kode batch YC ("SPRING 2026") jadi season & year.
@@ -82,6 +83,18 @@ def CleanText(RawText: str):
     Collapsed = re.sub(r"\s+", " ", RawText.replace("\xa0", " ")).strip()
     return Collapsed or None
 
+# @desc cek nama founder valid
+# @param Name founder yang sudah di-lcean
+# @return True kalau aman
+def IsValidFounderName(Name: str) -> bool:
+    if not Name:
+        return False
+    if Name.endswith(":"):
+        return False
+    if Name in FactLabelNames:
+        return False
+    return True
+
 
 # @desc run seluruh preprocessing
 # merge dua source, transform, build entties relasional terpisah
@@ -147,7 +160,7 @@ def BuildEntities():
 
         for FounderRecord in Detail.get("founders", []):
             FounderName = CleanText(FounderRecord.get("name"))
-            if not FounderName:
+            if not IsValidFounderName(FounderName):
                 continue
             Founders.append({
                 "founder_id": NextFounderId,
