@@ -1,41 +1,41 @@
--- output/SS hasil query optimization ini ada di ./screenshot/optimization.png
+DROP INDEX IF EXISTS IdxCompanyName;
+DROP INDEX IF EXISTS IdxFounderName;
+DROP INDEX IF EXISTS IdxSocialUrl;
 
--- Q1: Company by batch_id
--- BEFORE (Seq Scan on company)
-EXPLAIN ANALYZE SELECT slug, name FROM Company WHERE batch_id = 'Wi26';
-CREATE INDEX IF NOT EXISTS IdxCompanyBatch ON Company(batch_id);
+
+-- Q1: Company by name (point lookup)
+-- SEBELUM (Seq Scan on company):
+EXPLAIN ANALYZE SELECT slug FROM Company WHERE name = 'Stripe';
+CREATE INDEX IdxCompanyName ON Company(name);
 ANALYZE Company;
--- AFTER (Bitmap Index Scan on idxcompanybatch)
-EXPLAIN ANALYZE SELECT slug, name FROM Company WHERE batch_id = 'Wi26';
+-- SESUDAH (Index Scan using idxcompanyname):
+EXPLAIN ANALYZE SELECT slug FROM Company WHERE name = 'Stripe';
 
 
-
--- Q2: Company by founded_year (range)
--- BEFORE (Seq Scan on company)
-EXPLAIN ANALYZE SELECT slug, name FROM Company WHERE founded_year BETWEEN 2010 AND 2015;
-CREATE INDEX IF NOT EXISTS IdxCompanyFounded ON Company(founded_year);
-ANALYZE Company;
--- AFTER (Bitmap/Index Scan on idxcompanyfounded)
-EXPLAIN ANALYZE SELECT slug, name FROM Company WHERE founded_year BETWEEN 2010 AND 2015;
-
+-- Q2: Founder by name (point lookup)
+-- SEBELUM (Seq Scan on founder):
+EXPLAIN ANALYZE SELECT company_slug FROM Founder WHERE name = 'Patrick Collison';
+CREATE INDEX IdxFounderName ON Founder(name);
+ANALYZE Founder;
+-- SESUDAH (Index Scan using idxfoundername):
+EXPLAIN ANALYZE SELECT company_slug FROM Founder WHERE name = 'Patrick Collison';
 
 
--- Q3: Company by status_id+team_size (composite)
--- BEFORE (Seq Scan on company)
-EXPLAIN ANALYZE SELECT slug, name FROM Company WHERE status_id = 1 AND team_size > 100;
-CREATE INDEX IF NOT EXISTS IdxCompanyStatusTeam ON Company(status_id, team_size);
-ANALYZE Company;
--- AFTER (Bitmap Index Scan on idxcompanystatusteam)
-EXPLAIN ANALYZE SELECT slug, name FROM Company WHERE status_id = 1 AND team_size > 100;
+-- Q3: FounderSocial by url (point lookup)
+-- SEBELUM (Seq Scan on foundersocial):
+EXPLAIN ANALYZE SELECT founder_id FROM FounderSocial WHERE url = 'https://github.com/ray-project/ray';
+CREATE INDEX IdxSocialUrl ON FounderSocial(url);
+ANALYZE FounderSocial;
+-- SESUDAH (Index Scan using idxsocialurl):
+EXPLAIN ANALYZE SELECT founder_id FROM FounderSocial WHERE url = 'https://github.com/ray-project/ray';
 
 
-
--- PROOF OUTPUT IDENTIK (hash BEFORE == AFTER)
-SELECT 'Q1' AS q, COUNT(*), MD5(STRING_AGG(slug, ',' ORDER BY slug)) AS output_hash
-FROM Company WHERE batch_id = 'Wi26'
+-- hash sebelum == sesudah
+SELECT 'Q1' AS q, COUNT(*), MD5(COALESCE(STRING_AGG(slug, ',' ORDER BY slug), '')) AS output_hash
+FROM Company WHERE name = 'Stripe'
 UNION ALL
-SELECT 'Q2', COUNT(*), MD5(STRING_AGG(slug, ',' ORDER BY slug))
-FROM Company WHERE founded_year BETWEEN 2010 AND 2015
+SELECT 'Q2', COUNT(*), MD5(COALESCE(STRING_AGG(company_slug, ',' ORDER BY company_slug), ''))
+FROM Founder WHERE name = 'Patrick Collison'
 UNION ALL
-SELECT 'Q3', COUNT(*), MD5(STRING_AGG(slug, ',' ORDER BY slug))
-FROM Company WHERE status_id = 1 AND team_size > 100;
+SELECT 'Q3', COUNT(*), MD5(COALESCE(STRING_AGG(founder_id::text, ',' ORDER BY founder_id), ''))
+FROM FounderSocial WHERE url = 'https://github.com/ray-project/ray';

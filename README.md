@@ -434,24 +434,25 @@ ORDER BY avg_founder_per_company DESC;
 
 ## Bonus 3: Query Optimasi
 
-Aku bikin 3 query optimasi pakai **index** pada kolom yang sering difilter tapi belum
-ada index-nya (semua di tabel `Company`, awalnya kena Seq Scan). Ada di folder
-`Data Storing/Query Optimasi/` — `Optimization.sql` (berisi EXPLAIN ANALYZE sebelum &
-sesudah + bukti hash) dan `optimization.png` (screenshot bukti query lebih optimal).
+Aku bikin 3 query optimasi pakai **B-tree index** pada kolom yang sering difilter tapi belum
+ada index-nya, awalnya kena Seq Scan. Dipilih query **point-lookup** (return sedikit baris /
+high-selectivity) supaya planner konsisten memilih index walau tabel relatif kecil. Ada di
+folder `Query Optimasi/` — `Optimization.sql` (berisi EXPLAIN ANALYZE sebelum & sesudah +
+bukti hash) dan `optimization.png` (screenshot bukti query lebih optimal).
 
 | Query | Filter | Sebelum | Sesudah | Index |
 |---|---|---|---|---|
-| Q1 | `batch_id = 'Wi26'` | Seq Scan ~2.1ms | Bitmap Index Scan ~0.09ms | `IdxCompanyBatch` |
-| Q2 | `founded_year BETWEEN 2010 AND 2015` | Seq Scan ~0.28ms | Index Scan ~0.06ms | `IdxCompanyFounded` |
-| Q3 | `status_id=1 AND team_size>100` | Seq Scan ~0.23ms | Bitmap Index Scan ~0.03ms | `IdxCompanyStatusTeam` (composite) |
+| Q1 | `Company.name = 'Stripe'` | Seq Scan ~0.27ms | Index Scan ~0.03ms | `IdxCompanyName` |
+| Q2 | `Founder.name = 'Patrick Collison'` | Seq Scan ~0.11ms | Index Scan ~0.02ms | `IdxFounderName` |
+| Q3 | `FounderSocial.url = '...github.com/ray-project/ray'` | Seq Scan ~0.14ms | Index Scan ~0.02ms | `IdxSocialUrl` |
 
 **Bukti output identik:** index cuma mengubah *cara akses*, bukan hasil. Aku verifikasi
 dengan hash MD5 dari hasil query, sebelum == sesudah untuk ketiganya:
 
 ```
-Q1 | 188 baris | 13094960c0c2053d75b07210dab84660
-Q2 | 175 baris | e6cf3d72f889bddca832f04c8a2f50fb
-Q3 |  86 baris | b28806e0b12d140b4e6f1b3d811e450e
+Q1 | 1 baris | 8a98c86b49d93794705dd64bcdbbe3ab
+Q2 | 1 baris | 8a98c86b49d93794705dd64bcdbbe3ab
+Q3 | 1 baris | 9087b0efc7c7acd1ef7e153678809c77
 ```
 
 Index ini sengaja **tidak** aku taruh di `Schema.sql` biar transisi Seq Scan → Index Scan bisa direproduksi dari nol.
