@@ -223,7 +223,7 @@ def StoreAll():
 
         Connection.commit()
 
-    print(f"  company: {len(Companies)} row upsert")
+    print(f"  company: {len(Companies)} row upserted")
     print(f"  m:n & founder: {len(CompanyIndustries)} company_industry, {len(RawFounders)} founder, {len(RawSocials)} social")
     print("DONE")
 
